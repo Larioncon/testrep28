@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(2, 90, 71, 0.534);
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.wrapper {
+  width: 1280px;
+  margin: 20px auto; 
+}
+.header__info {
+background-color: aquamarine;
+padding: 10px 10px;
+border-radius: 5px;
+}
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+header ul.nav {
+  float: right;
+  list-style: none;
+}
+header ul.nav li {
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 1.2s;
+  font-size: 16px;
+}
+header ul.nav li:hover {
+  color: blue;
+  transition: all 0.7s;
+  font-size: 18px;
+}
+header .shopcart__button {
+  float: right;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+header .shopcart__button:hover,
+header .shopcart__button.active {
+  color: #24961a;
+  transform: scale(1.1);
+  transition: all 500ms ease;
+}
+header .presentation {
+  margin: 0 0 20px 0;
+  background: url('./img/Logo.svg') no-repeat;
+  background-size: 400px 200px;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(113, 208, 221, 0.281);
+  border-radius: 0 0 45% 45%;
+}
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background: rgba(105, 113, 230, 0.342);
+  border-radius: 18px 18px 0 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+main .item img {
+  width: 90%;
+  margin: 0 5%;
+  transition: all 0.5s;
+}
+main .item img:hover {
+  transform: scale(1.035);
+  transition: all 0.3s;
+}
+
+main h2, p, b {
+  margin: 10px 20px;
+  color: #0a0303;
+}
+main b {
+  color: rgba(4, 75, 41, 0.979);
+}
+.add-to-cart {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 32px;
+  background: rgba(243, 71, 71, 0.767);
+  border-radius: 50%;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-size: 26px;
+  transition: all 0.4s;
+}
+.add-to-cart:hover {
+  transform: scale(1.15);
+  transition: all 0.3s;
+}
