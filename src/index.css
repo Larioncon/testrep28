@@ -20,6 +20,9 @@ background-color: aquamarine;
 padding: 10px 10px;
 border-radius: 5px;
 }
+header {
+  position: relative;
+}
 header .logo {
   font-weight: 600;
   font-size: 20px;
@@ -43,13 +46,30 @@ header ul.nav li:hover {
 header .shopcart__button {
   float: right;
   cursor: pointer;
-  transition: all 500ms ease;
+  transition: all 700ms ease;
 }
 header .shopcart__button:hover,
 header .shopcart__button.active {
   color: #24961a;
-  transform: scale(1.1);
+  transform: scale(1.4);
   transition: all 500ms ease;
+}
+header .shopcart__button.active {
+  color: #0c7a01;
+}
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background: rgb(1, 13, 27);
+  border-bottom-left-radius: 15px ;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -43px 62px 102px 7px rgba(52,52,214,0.58);
+-webkit-box-shadow: -43px 62px 102px 7px rgba(52,52,214,0.58);
+-moz-box-shadow: -43px 62px 102px 7px rgba(52,52,214,0.58);
 }
 header .presentation {
   margin: 0 0 20px 0;
